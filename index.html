@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Ma petite Entreprise </title>
+    <meta content="text/html">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+            crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/639c474b7d.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+
+    <div id="navigation">
+
+        <div class="mobile-nav">
+            <!-- menu hamburger fait en html et css -->
+            <div class="menu-btn" id="menu-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>        <img src="image_tp/logo.png" alt=""  />
+
+        <nav>
+            <ul class="row noshow">
+                <li  class="col-3 col-m-3"><a href="accueil.html">Accueil</a></li>
+                <li class="col-3 col-m-3"><a href="catalogue.html">Catalogue</a></li>
+                <li class="col-3 col-m-3"><a href="reservation.html">Reservation</a></li>
+                <li class="col-3 col-m-3"><a href="details.html">Detail</a></li>
+            </ul>
+        </nav>
+
+        <!--<span  > <img src="image_tp/logo.png" alt=""  />  </span>
+        <span id="nouveautes"> <a href ="catalogue.html" id="new"> Catalogue  </a> </span>
+        <span id="collection"> <a href="reservation.html" id="col"> Reservation </a></span>
+        <span id="experience"> <a href = "details.html" id="exp"> Details </a></span>
+        &lt;!&ndash;<span id = "boutiques"> <a href="boutique.html" style="color: #F0E39E; text-decoration: none">Boutiques </a></span>&ndash;&gt;
+
+-->
+    </div> <!-- NAVIGATION-->
+</header>
+
+
+<main>
+    <div id="main_contenu" class="row">
+        <div id="articles" class="col-9 col-m-9">
+            <h1>CONCERTS</h1>
+            <section class="row">
+                <article class="col-6">
+                    <h2>Concert de Booba</h2>
+                    <img src="image_tp/booba3.jpeg" alt="">
+                </article >
+                <article class="col-6">
+                    <h2>Concert Mhd</h2>
+                </article>
+            </section>
+        </div>
+        <aside class="col-3 col-m-3">
+            <img src="image_tp/mhd3.jpeg" alt="">
+        </aside>
+    </div>
+</main>
+
+<div id="contenu">
+
+        . <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br> . <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>. <br>
+
+    </div>
+
+
+
+    <div id="pied"> &copy; <address> MG 2018</address></div>
+<script>
+    // script pour masquer et afficher le menu mobile
+    $(document).ready(function(){
+        $('#menu-hamburger').click(function(){
+            $('nav ul').toggleClass('noshow');
+        });
+    });
+</script>
+</body>
+</html>

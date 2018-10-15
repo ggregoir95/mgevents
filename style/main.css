@@ -1,0 +1,385 @@
+/* ==============================================
+   FEUILLE DE STYLES DES GABARITS HTML/CSS --- 01
+   © Elephorm & Alsacreations.com
+   Conditions d'utilisation:
+   http://creativecommons.org/licenses/by/2.0/fr/
+   ============================================== */
+
+
+/* Général */
+
+
+/*MAIN StyleSheet*/
+* {
+    box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section {
+    display: block;
+}
+
+body {
+    margin: 0;
+}
+
+header, footer {
+    background-color: #5d6c90;
+    color: #ff6e95;
+}
+
+
+[class*="col-"] {
+    width: 100%;
+    padding: 0 0;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* HEADER*/
+
+/*MENU HAMBURGER*/
+
+#menu-hamburger {
+    padding: 10px 0;
+}
+
+.menu-btn span {
+    width: 50px;
+    height: 3px;
+    display: block;
+    background-color: #fffafe;
+    margin: 8px;
+}
+
+.noshow {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    color: #fffafe;
+    text-decoration: none;
+    margin: 0;
+}
+
+nav ul li {
+    border-top: 1px solid #fffafe;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+
+nav ul li a {
+    color: #fffafe;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+    padding-left: 5px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #516dff;
+}
+
+/* MAIN */
+main {
+    padding: 1%;
+    background-color: #fffafe;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* FOOTER*/
+footer {
+    height: 50px;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+@media (min-width: 768px) {
+    #wrapper {
+        width: 100%;
+    }
+
+    .col-m-9 {
+        width: 50%;
+    }
+
+    .col-m-3 {
+        width: 25%;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 0 30px
+    }
+
+}
+
+@media (min-width: 992px) {
+    #wrapper {
+        width: 100%;
+    }
+
+    .col-9 {
+        width: 50%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-3 {
+        width: 15%;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 0 30px;
+        text-align: center;
+    }
+
+}
+
+/*
+div span {
+    border: 1px solid #ff3e57;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+
+
+
+div span a{
+    color: #ff6e95;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+    padding-left: 5px;
+    display: block;
+
+}
+div span:hover {
+    background-color: #95d0ff;
+}
+*/
+
+
+/* Navigation */
+#navigation {
+    background: #207299;
+    list-style: none;
+    padding: 0;
+    color: #fffafe;
+    text-decoration: none;
+    margin: 0;
+
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: #207299;
+    border: 200px;
+    border-color: #002534;
+
+}
+
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: #207299;
+    border: 20px;
+
+}
+/* Contenu principal */
+
+
+
+
+/* Pied de page */
+#pied {
+    color: #E6A948;
+    background: #fffafe;
+
+
+}
+
+
+/* --- POSITIONNEMENT --- */
+
+/* Page */
+body {
+    padding: 0; /* -> 2 */
+}
+
+/* En-tête */
+#entete {
+    padding: 15px 20px 10px 20px;
+}
+#entete h1 {
+    margin: 0;
+}
+#entete h1 img {
+    float: left;
+    margin: 7px 20px 10px 0;
+}
+#entete .sous-titre {
+    margin: 4px 0 15px 0;
+}
+
+/* Menu de navigation */
+#navigation {
+    padding: 12px 15px;
+}
+#navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#navigation li {
+    display: inline; /* -> 3 */
+}
+#navigation a {
+
+    text-decoration: none;
+
+}
+
+/* Contenu */
+#contenu {
+    padding: 10px 20px;
+
+    width: 1320px;
+    /*background: black url(bg.jpg) no-repeat;*/
+    /*background-size:  100% 450px;*/
+    overflow: auto;
+
+}
+#contenu > :first-child {
+    margin-top: 10px;
+}
+#contenu p, #contenu li {
+    line-height: 1.5;
+}
+
+/* Pied de page */
+#pied {
+    padding: 15px 20px;
+    font-size: .85em;
+    background: #207299;
+    height: 30px;
+
+}
+#pied p {
+    margin: .5em 0;
+}
+#pied #copyright {
+    float: right;
+    margin: .5em 0 30px 10%;
+    font-size: 1em;
+}
+
+
+/* --- NOTES ---
+
+1.	Notes que cette couleur de fond n'est apparente qu'en bas de page. Plus
+	haut, elle est masque: par la couleur de fond de l'en-tête, puis par la
+	couleur de fond du menu, puis par la couleur de fond du contenu. Seul le
+	pied de page laisse apparaitre cette couleur de fond.
+
+2.	Pour ce gabarit, on supprime l'écart entre les «bords» du navigateur et
+	le contenu, en passant le padding de l'élément BODY à zéro.
+	(Voir également la note numéro 2 dans base.css.)
+
+3.	Si les éléments de notre menu se placent horizontalement plutôt que les
+	uns en dessous des autres, c'est parce qu'ils ne sont plus affichés
+	comme des blocs (ce qui est normalement le cas des éléments LI), mais
+	comme des éléments de type en-ligne. On obtient ce comportement avec la
+	propriété "display" et la valeur "inline".
+	Le fait que nos LI se comportent comme un flot unique de texte aura deux
+	conséquences:
+	- on va pouvoir aligner le texte du menu à gauche (c'est le cas ici), à
+	  droite ou encore au centre, en jouant sur la propriété "text-align" du
+	  menu (sur l'élément UL ou sur div#navigation);
+	- certains styles ne pourront pas être appliqués... par exemple, la
+	  propriété "width" ne peut pas être utilisée pour les éléments en
+	  "display: inline".
+
+*/
+
+
+
+
+@media (min-width: 768px) {
+    #wrapper {
+        width: 100%;
+    }
+
+    .col-m-9 {
+        width: 50%;
+    }
+
+    .col-m-3 {
+        width: 25%;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 0 30px
+    }
+
+}
+
+@media (min-width: 992px) {
+    #wrapper {
+        width: 100%;
+    }
+
+    .col-9 {
+        width: 50%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-3 {
+        width: 15%;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 0 30px;
+        text-align: center;
+    }
+
+
+}
+
+
+
+
