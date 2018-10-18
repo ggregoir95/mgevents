@@ -1,4 +1,6 @@
 /*MAIN StyleSheet*/
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
 * {
     box-sizing: border-box;
 }
@@ -148,6 +150,137 @@ img {
 
 }
 
+#sec2 {
+    margin-top: 100px;
+}
+
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, figure {
+    margin: 0;
+    font-family: Istok Web, sans-serif;
+    font-weight: 100;
+}
+
+div.captioned-gallery {
+    width: 100%;
+    overflow: hidden;
+}
+
+figure.slider {
+    position: relative;
+    width: 500%;
+    font-size: 0;
+    animation: 20s slidy infinite;
+}
+
+figure.slider figure {
+    width: 20%;
+    height: auto;
+    display: inline-block;
+    position: inherit;
+}
+
+figure.slider img {
+    width: 100%;
+    height: auto;
+}
+
+figure.slider figure figcaption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    color: #94761f;
+    width: 100%;
+    font-size: 2rem;
+    padding: .6rem;
+}
+
+figure.slider figure img {
+    height: 500px
+}
+
+/*Clicking on any thumbnail now should activate the image related to it*/
+
+/*We are done :)*/
+/*SOCIAL MEDIA*/
+#social {
+    margin-top: 100px;
+
+    clear: both;
+    color: #94761f;
+
+}
+
+#social ul {
+    list-style: none;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    text-align: right;
+
+}
+
+#social ul li {
+    display: inline;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+#social ul li a {
+
+    color: #94761f;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+    padding-left: 5px;
+    display: inline;
+}
+
+#social img {
+    width: 75px;
+}
+
+#social img:hover {
+    opacity: 0.55;
+    background-color: #e7ffe4;
+}
+
 /*#articles{
     border-right: 1px #5d6c90 solid;
 
@@ -262,4 +395,5 @@ footer {
         padding: 0 30px;
         text-align: center;
     }
+
 }
