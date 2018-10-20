@@ -122,6 +122,24 @@ nav ul li a:hover {
 /* MAIN */
 main {
     padding: 1%;
+    background-image: url("../image_tp/background.jpg");
+}
+
+#textInp {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.imgCata {
+    display: block;
+    width: 90%;
+    height: 55%;
+    margin: 2% auto;
+}
+
+.itemBox {
+    border: 3px solid black;
+    border-radius: 8px;
 }
 
 #logo {
