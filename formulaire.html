@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <title>Reservation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="Reservation" />
-    <meta property="og:description" content="Page de reservation" />
-    <meta property="og:image" content="/image_tp/logo.png" />
-    <meta property="og:site_name" content="MG Events" />
+    <meta property="og:title" content="Reservation"/>
+    <meta property="og:description" content="Page de reservation"/>
+    <meta property="og:image" content="/image_tp/logo.png"/>
+    <meta property="og:site_name" content="MG Events"/>
     <link rel="stylesheet" type="text/css" href="style/main.css">
     <script
             src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -42,60 +42,91 @@
     </div>
 </header>
 <main>
-    <h1>Reservation</h1>
-    <div>
-        <form>
-            <label for="nom">Nom: </label>
-            <input id="nom" type="text" placeholder="Nom" name="nom" pattern="([A-Za-z]{2,})" autofocus required>
-            <label for="prenom">Prenom: </label>
-            <input id="prenom" type="text" placeholder="Prenom" name="prenom" pattern="([A-Za-z]{2,})" required>
-            <label for="tel">Téléphone: </label>
-            <input id="tel" type="text" placeholder="(514)123-4567" name="tel" pattern="(\([0-9][0-9][0-9]\)[0-9][0-9][0-9]-[0-9][0-9][0-9][0-9])" required>
-            <label for="email">Courriel: </label>
-            <input id="email" type="email" placeholder="exemple@exemple.com" name="email" pattern="/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}
+    <h1 class="col-12">Reservation</h1>
+    <div class="col-12">
+        <form id="forumulaire">
+            <div class="contForm">
+                <label for="nom" class="formLabel">Nom: </label>
+                <input id="nom" type="text" placeholder="Nom" name="nom" pattern="([A-Za-z]{2,})" autofocus required>
+            </div>
+            <div class="contForm">
+                <label for="prenom" class="formLabel">Prenom: </label>
+                <input id="prenom" type="text" placeholder="Prenom" name="prenom" pattern="([A-Za-z]{2,})" required>
+            </div>
+            <div class="contForm">
+                <label for="tel" class="formLabel">Téléphone: </label>
+                <input id="tel" type="text" placeholder="(514)123-4567" name="tel"
+                       pattern="(\([0-9][0-9][0-9]\)[0-9][0-9][0-9]-[0-9][0-9][0-9][0-9])" required>
+            </div>
+            <div class="contForm">
+                <label for="email" class="formLabel">Courriel: </label>
+                <input id="email" type="email" placeholder="exemple@exemple.com" name="email" pattern="/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}
                [a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/" required>
-
-            <label for="age">Votre age: </label>
-            <input id="age" type="number" name="age" value="">
-
-            <label for="liForfaits">Artiste Choisi: </label>
-            <input id="liForfaits" list="forfaits">
-            <datalist id="forfaits">
-                <option value="Akon">
-                <option value="Booba">
-                <option value="Drake">
-                <option value="MHD">
-                <option value="Migos">
-                <option value="Rihanna">
-                <option value="Gad Elmaleh">
-                <option value="Kevin Hart">
-                <option value="Jamel Debbouze">
-                <option value="Kev Adams">
-                <option value="Russel Peters">
-                <option value="Ahmed Sylla">
-            </datalist>
-
-            <label for="standard">Billet Standard </label>
-            <input id="standard" type="radio" name="billet" value="standard" checked>
-            <label for="vip">Billet VIP </label>
-            <input id="vip" type="radio" name="billet" value="vip"><br />
-
-            <label for="extras">Extras: </label>
+            </div>
+            <div class="contForm" >
+                <label for="age" class="formLabel">Votre age: </label>
+                <input id="age" type="number" name="age" value="">
+            </div>
+            <div class="contForm">
+                <label for="liForfaits" class="formLabel">Artiste Choisi: </label>
+                <input id="liForfaits" list="forfaits">
+                <datalist id="forfaits">
+                    <option value="Akon">
+                    <option value="Booba">
+                    <option value="Drake">
+                    <option value="MHD">
+                    <option value="Migos">
+                    <option value="Rihanna">
+                    <option value="Gad Elmaleh">
+                    <option value="Kevin Hart">
+                    <option value="Jamel Debbouze">
+                    <option value="Kev Adams">
+                    <option value="Russel Peters">
+                    <option value="Ahmed Sylla">
+                </datalist>
+            </div>
+            <div class="radB">
+                <label for="standard" class="formLabel">Billet Standard </label>
+                <input id="standard" type="radio" name="billet" value="standard" checked>
+            </div>
+            <div>
+                <label for="vip" class="formLabel">Billet VIP </label>
+                <input id="vip" type="radio" name="billet" value="vip"><br/>
+            </div>
+            <label for="extras" class="formLabel"><strong>Extras: </strong></label>
             <div id="extras">
                 <input type="checkbox" name="extra1" value="champagne">Bouteille de Champagne<br>
                 <input type="checkbox" name="extra2" value="valet"> Service de Valet<br>
                 <input type="checkbox" name="extra3" value="vestiaire"> Service de Vestiaire
             </div>
-
-            <label for="textInp">Entrez demandes speciales: </label><br />
-            <textarea id="textInp">
+            <div>
+                <label for="textInp" class="formLabel">Entrez demandes speciales: </label><br/>
+                <textarea id="textInp">
             </textarea>
-
-            <input type="submit" value="Reserver">
+            </div>
+            <input id="reserver" type="submit" value="Reserver">
         </form>
 
-        <h2>Emplacement de votre reservation</h2>
-        <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=45.5440916%2C%20-73.6424363&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de">pureblack.de</a></div><style>.mapouter{text-align:right;height:400px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%%;}</style></div>
+        <h2 class="col-12">Emplacement de votre reservation</h2>
+        <div class="mapouter col-12">
+            <div class="gmap_canvas">
+                <iframe width="100%" height="375" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=45.5440916%2C%20-73.6424363&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+            <style>.mapouter {
+                text-align: right;
+                height: 425px;
+                width: 100%;
+            }
+
+            .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 425px;
+                width: 100%%;
+            }</style>
+        </div>
     </div>
 
 </main>

@@ -299,6 +299,32 @@ figure.slider figure img {
     background-color: #e7ffe4;
 }
 
+/*******Page Formulaire*********/
+
+#formulaire {
+    display: flex;
+    flex-direction: column;
+}
+
+.formLabel, #extras {
+    color: wheat;
+}
+
+.contForm {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+#reserver {
+    display: block;
+    margin: 0 auto;
+}
+
+.radB {
+    margin-top: 15px;
+}
+
 /*#articles{
     border-right: 1px #5d6c90 solid;
 
@@ -313,8 +339,13 @@ footer {
     vertical-align: bottom;
     color: #94761f;
     background-color: #050c16;
+    /*position: fixed;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*width: 100%;*/
 }
 
+/***********************Desktop******************************/
 @media (min-width: 992px) {
 
     #wrapper {
