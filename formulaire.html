@@ -41,72 +41,78 @@
         </nav>
     </div>
 </header>
-<main>
-    <h1 class="col-12">Reservation</h1>
-    <div class="col-12">
+<main class="row">
+    <h1 class="col-12 col-m-12">Reservation</h1>
+    <div class="col-12 col-m-10">
         <form id="forumulaire">
-            <div class="contForm">
-                <label for="nom" class="formLabel">Nom: </label>
-                <input id="nom" type="text" placeholder="Nom" name="nom" pattern="([A-Za-z]{2,})" autofocus required>
-            </div>
-            <div class="contForm">
-                <label for="prenom" class="formLabel">Prenom: </label>
-                <input id="prenom" type="text" placeholder="Prenom" name="prenom" pattern="([A-Za-z]{2,})" required>
-            </div>
-            <div class="contForm">
-                <label for="tel" class="formLabel">Téléphone: </label>
-                <input id="tel" type="text" placeholder="(514)123-4567" name="tel"
-                       pattern="(\([0-9][0-9][0-9]\)[0-9][0-9][0-9]-[0-9][0-9][0-9][0-9])" required>
-            </div>
-            <div class="contForm">
-                <label for="email" class="formLabel">Courriel: </label>
-                <input id="email" type="email" placeholder="exemple@exemple.com" name="email" pattern="/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}
+            <div id="formElem">
+                <div class="contForm">
+                    <label for="nom" class="formLabel">Nom: </label>
+                    <input id="nom" type="text" placeholder="Nom" name="nom" pattern="([A-Za-z]{2,})" autofocus
+                           required>
+                </div>
+                <div class="contForm">
+                    <label for="prenom" class="formLabel">Prenom: </label>
+                    <input id="prenom" type="text" placeholder="Prenom" name="prenom" pattern="([A-Za-z]{2,})" required>
+                </div>
+                <div class="contForm">
+                    <label for="tel" class="formLabel">Téléphone: </label>
+                    <input id="tel" type="text" placeholder="(514)123-4567" name="tel"
+                           pattern="(\([0-9][0-9][0-9]\)[0-9][0-9][0-9]-[0-9][0-9][0-9][0-9])" required>
+                </div>
+                <div class="contForm">
+                    <label for="email" class="formLabel">Courriel: </label>
+                    <input id="email" type="email" placeholder="exemple@exemple.com" name="email" pattern="/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}
                [a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/" required>
+                </div>
+                <div class="contForm">
+                    <label for="age" class="formLabel">Votre age: </label>
+                    <input id="age" type="number" name="age" value="">
+                </div>
+                <div class="contForm">
+                    <label for="liForfaits" class="formLabel">Artiste Choisi: </label>
+                    <input id="liForfaits" list="forfaits">
+                    <datalist id="forfaits">
+                        <option value="Akon">
+                        <option value="Booba">
+                        <option value="Drake">
+                        <option value="MHD">
+                        <option value="Migos">
+                        <option value="Rihanna">
+                        <option value="Gad Elmaleh">
+                        <option value="Kevin Hart">
+                        <option value="Jamel Debbouze">
+                        <option value="Kev Adams">
+                        <option value="Russel Peters">
+                        <option value="Ahmed Sylla">
+                    </datalist>
+                </div>
             </div>
-            <div class="contForm" >
-                <label for="age" class="formLabel">Votre age: </label>
-                <input id="age" type="number" name="age" value="">
+            <div id="grpRadio">
+                <div id="radB">
+                    <label for="standard" class="formLabel">Billet Standard </label>
+                    <input id="standard" type="radio" name="billet" value="standard" checked>
+                </div>
+                <div id="radB2">
+                    <label for="vip" class="formLabel">Billet VIP </label>
+                    <input id="vip" type="radio" name="billet" value="vip"><br/>
+                </div>
             </div>
-            <div class="contForm">
-                <label for="liForfaits" class="formLabel">Artiste Choisi: </label>
-                <input id="liForfaits" list="forfaits">
-                <datalist id="forfaits">
-                    <option value="Akon">
-                    <option value="Booba">
-                    <option value="Drake">
-                    <option value="MHD">
-                    <option value="Migos">
-                    <option value="Rihanna">
-                    <option value="Gad Elmaleh">
-                    <option value="Kevin Hart">
-                    <option value="Jamel Debbouze">
-                    <option value="Kev Adams">
-                    <option value="Russel Peters">
-                    <option value="Ahmed Sylla">
-                </datalist>
-            </div>
-            <div class="radB">
-                <label for="standard" class="formLabel">Billet Standard </label>
-                <input id="standard" type="radio" name="billet" value="standard" checked>
+            <div id="containerExtras">
+                <label for="extras" class="formLabel"><strong>Extras: </strong></label>
+                <div id="extras">
+                    <input type="checkbox" name="extra1" value="champagne">Bouteille de Champagne<br>
+                    <input type="checkbox" name="extra2" value="valet"> Service de Valet<br>
+                    <input type="checkbox" name="extra3" value="vestiaire"> Service de Vestiaire
+                </div>
             </div>
             <div>
-                <label for="vip" class="formLabel">Billet VIP </label>
-                <input id="vip" type="radio" name="billet" value="vip"><br/>
-            </div>
-            <label for="extras" class="formLabel"><strong>Extras: </strong></label>
-            <div id="extras">
-                <input type="checkbox" name="extra1" value="champagne">Bouteille de Champagne<br>
-                <input type="checkbox" name="extra2" value="valet"> Service de Valet<br>
-                <input type="checkbox" name="extra3" value="vestiaire"> Service de Vestiaire
-            </div>
-            <div>
-                <label for="textInp" class="formLabel">Entrez demandes speciales: </label><br/>
+                <label for="textInp" class="formLabel">Entrez vos demandes speciales: </label><br/>
                 <textarea id="textInp">
-            </textarea>
+                </textarea>
             </div>
             <input id="reserver" type="submit" value="Reserver">
         </form>
-
         <h2 class="col-12">Emplacement de votre reservation</h2>
         <div class="mapouter col-12">
             <div class="gmap_canvas">
@@ -124,13 +130,12 @@
                 overflow: hidden;
                 background: none !important;
                 height: 425px;
-                width: 100%%;
+                width: 100%;
             }</style>
         </div>
     </div>
-
 </main>
-<footer>
+<footer class="col-12">
     <p>Footer &copy; 2015</p>
 </footer>
 <script>
