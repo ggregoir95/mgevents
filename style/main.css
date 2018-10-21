@@ -135,23 +135,6 @@ main {
     background-image: url("../image_tp/background.jpg");
 }
 
-#textInp {
-    box-sizing: border-box;
-    width: 100%;
-}
-
-.imgCata {
-    display: block;
-    width: 90%;
-    height: 55%;
-    margin: 2% auto;
-}
-
-.itemBox {
-    border: 3px solid black;
-    border-radius: 8px;
-}
-
 #logo {
     position: relative;
     height: 25px;
@@ -323,6 +306,47 @@ figure.slider figure img {
     background-color: #e7ffe4;
 }
 
+/*********Page Catalogue**********/
+
+#textInp {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.imgCata {
+    display: block;
+    width: 90%;
+    height: 55%;
+    margin: 2% auto;
+}
+
+.itemBox {
+    border: 3px solid black;
+    border-radius: 8px;
+}
+
+/*******Page Formulaire*********/
+
+
+.formLabel, #extras {
+    color: wheat;
+}
+
+.contForm {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+#reserver {
+    display: block;
+    margin: 0 auto;
+}
+
+#radB {
+    margin-top: 15px;
+}
+
 /*#articles{
     border-right: 1px #5d6c90 solid;
 
@@ -337,188 +361,114 @@ footer {
     vertical-align: bottom;
     color: #94761f;
     background-color: #050c16;
+    /*position: fixed;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*width: 100%;*/
 }
 
-/*************************************************************************************************************************************/
-/*MEDIUM DEVICES*/
-/*************************************************************************************************************************************/
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
-    /*SYSTEME DE GRILLES********************************************************************************************/
-    /**on divise la largeur de l'écran en 12 colonnes. Chaque colonne occupe un douzième de la page**************/
-    /*largeur d'1 colonne*/
-    .col-m-1 {
-        width: 8.33%;
+    #wrapper {
+        width: 100%;
     }
 
-    /*largeur de 2 colonnes*/
-    .col-m-2 {
-        width: 16.66%;
-    }
-
-    /*largeur de 3 colonnes*/
-    .col-m-3 {
-        width: 25%;
-    }
-
-    /*largeur de 4 colonnes*/
-    .col-m-4 {
-        width: 33.33%;
-    }
-
-    /*largeur de 5 colonnes*/
-    .col-m-5 {
-        width: 41.66%;
-    }
-
-    /*largeur de 6 colonnes*/
-    .col-m-6 {
-        width: 50%;
-    }
-
-    /*largeur de 7 colonnes*/
-    .col-m-7 {
-        width: 58.33%;
-    }
-
-    /*largeur de 8 colonnes*/
-    .col-m-8 {
-        width: 66.66%;
-    }
-
-    /*largeur de 9 colonnes*/
-    .col-m-9 {
-        width: 75%;
-    }
-
-    /*largeur de 10 colonnes*/
-    .col-m-10 {
-        width: 83.33%;
-    }
-
-    /*largeur de 11 colonnes*/
-    .col-m-11 {
-        width: 91.66%;
-    }
-
-    /*largeur de 12 colonnes*/
     .col-m-12 {
         width: 100%;
     }
 
-    /**on aligne les colonnes les unes à côté des autres avec la propriété float**************/
+    .col-m-11 {
+        width: 85%;
+    }
+
+    .col-m-10 {
+        width: 80%;
+    }
+
+    .col-m-9 {
+        width: 75%;
+    }
+
+    .col-m-7 {
+        width: 70%;
+    }
+
+    .col-m-8 {
+        width: 65%;
+
+    }
+
+    .col-m-5 {
+        width: 50%;
+    }
+
+    .col-m-3 {
+        width: 25%;
+    }
+
     [class*="col-"] {
         float: left;
         padding: 0 15px;
     }
+}
 
-    /**
-        chaque rangée de colonnes doit être enveloppée dans une div de class "row". on applique un clear:both sur chaque row afin d'annuler l'effet de float
-        et éviter que les éléments suivants remontent et entourent le "row"
+@media (min-width: 768px) {
 
-    **/
-    .row:after {
-        content: "";
-        clear: both;
-        display: block;
+    #wrapper {
+        width: 100%;
     }
-
     /*END SYSTEME DE GRILLES*************************************************************************************/
 }
 
-/*************************************************************************************************************************************/
-/*DESKTOP DEVICES*/
-/*************************************************************************************************************************************/
-@media (min-width: 960px) {
-
-    /*SYSTEME DE GRILLES********************************************************************************************/
-    /**on divise la largeur de l'écran en 12 colonnes. Chaque colonne occupe un douzième de la page**************/
-    /*largeur d'1 colonne*/
-    .col-1 {
-        width: 8.33%;
-    }
-
-    /*largeur de 2 colonnes*/
-    .col-2 {
-        width: 16.66%;
-    }
-
-    /*largeur de 3 colonnes*/
-    .col-3 {
-        width: 25%;
-    }
-
-    /*largeur de 4 colonnes*/
-    .col-4 {
-        width: 33.33%;
-    }
-
-    /*largeur de 5 colonnes*/
-    .col-5 {
-        width: 41.66%;
-    }
-
-    /*largeur de 6 colonnes*/
-    .col-6 {
-        width: 50%;
-    }
-
-    /*largeur de 7 colonnes*/
-    .col-7 {
-        width: 58.33%;
-    }
-
-    /*largeur de 8 colonnes*/
-    .col-8 {
-        width: 66.66%;
-    }
-
-    /*largeur de 9 colonnes*/
-    .col-9 {
-        width: 75%;
-    }
-
-    /*largeur de 10 colonnes*/
-    .col-10 {
-        width: 83.33%;
-    }
-
-    /*largeur de 11 colonnes*/
-    .col-11 {
-        width: 91.66%;
-    }
-
-    /*largeur de 12 colonnes*/
     .col-12 {
         width: 100%;
     }
 
-    /**on aligne les colonnes les unes à côté des autres avec la propriété float**************/
+    .col-11 {
+        width: 85%;
+    }
+
+    .col-10 {
+        width: 80%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-8 {
+        width: 65%;
+
+    }
+
+    .col-7 {
+        width: 70%;
+
+    }
+
+    .col-5 {
+        width: 25%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-3 {
+        width: 15%;
+    }
+    /*END SYSTEME DE GRILLES*************************************************************************************/
+    .noshow{
+        display: block;
+
+    .col-0 {
+        width: 3%
+    }
+
     [class*="col-"] {
         float: left;
-        padding: 0 15px;
+        padding: 0 30px;
+        text-align: center;
     }
 
-    /**
-        chaque rangée de colonnes doit être enveloppée dans une div de class "row". on applique un clear:both sur chaque row afin d'annuler l'effet de float
-        et éviter que les éléments suivants remontent et entourent le "row"
-
-    **/
-    .row:after {
-        content: "";
-        clear: both;
-        display: block;
-    }
-
-    /*END SYSTEME DE GRILLES*************************************************************************************/
-    .noshow {
-        display: block;
-
-    }
-
-    .menu-btn {
-        display: none;
-    }
 }
-
-
