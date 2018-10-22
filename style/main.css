@@ -18,6 +18,7 @@ header, footer {
     color: white;
 }
 
+
 /* système de grille*/
 
 [class*="col-"] {
@@ -148,6 +149,7 @@ main {
 #imgl {
     max-width: 100%;
     width: 100px;
+    transform: scale(1.5);
 }
 
 #title {
@@ -440,6 +442,12 @@ p{
         margin-top: 10px;
     }
 
+    nav ul li {
+        display: inline-block;
+        border-top: none;
+    }
+
+
     /*SYSTEME DE GRILLES********************************************************************************************/
     /**on divise la largeur de l'écran en 12 colonnes. Chaque colonne occupe un douzième de la page**************/
     /*largeur d'1 colonne*/
@@ -538,6 +546,13 @@ p{
 
     #formElem {
         justify-content: space-evenly;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=number],
+    #liForfaits {
+        width: 60%;
     }
 
     /*SYSTEME DE GRILLES********************************************************************************************/
