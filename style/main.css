@@ -293,7 +293,7 @@ figure.slider figure img {
 .imgCata {
     display: block;
     width: 90%;
-    height: 55%;
+    height: 275px;
     margin: 2% auto;
     margin-top: 10%;
 }
@@ -346,10 +346,12 @@ figure.slider figure img {
     margin-top: 15px;
 }
 
-/*#articles{
-    border-right: 1px #5d6c90 solid;
-
-}*/
+input[type=text],
+input[type=email],
+input[type=number],
+#liForfaits {
+    border-radius: 10px;
+}
 
 /* FOOTER*/
 footer {
